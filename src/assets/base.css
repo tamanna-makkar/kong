@@ -1,0 +1,31 @@
+/* tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.slide-right-leave-active,
+.slide-right-enter-active {
+  @apply transition duration-500;
+}
+
+.slide-right-enter-from,
+.slide-right-leave-to {
+  @apply translate-x-full;
+}
+
+html,
+body {
+  @apply w-full h-full;
+}
+
+#app {
+  @apply w-full h-full flex flex-col;
+}
+
+main {
+  @apply flex-1 relative;
+}
